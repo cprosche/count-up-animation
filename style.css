@@ -1,10 +1,10 @@
 :root {
-  --accent-color: blueviolet;
-  --bg-color: aliceblue;
+  --accent-color: blueviolet; 
+  --bg-color: aliceblue; 
 }
 body {
   align-items: center;
-  background-color: aliceblue;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -15,23 +15,23 @@ a,
 button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.countup {
+.count-up {
   font-size: 4rem;
   margin-bottom: 10px;
 }
 button {
-  background-color: blueviolet;
+  background-color: var(--accent-color);
   border-radius: 2px;
-  border: 1px solid blueviolet;
-  color: aliceblue;
+  border: 1px solid var(--accent-color);
+  color: var(--bg-color);
   font-size: 2rem;
   padding: 1rem 2rem;
 }
 button:hover {
-  background-color: aliceblue;
-  color: blueviolet;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
 }
 button:active {
-  background-color: blueviolet;
-  color: aliceblue;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }

@@ -26,7 +26,7 @@ const animateCountUp = (el) => { // el must be an element containing only an int
 };
 
 const runAnimations = () => {
-  document.querySelectorAll(".countup").forEach(animateCountUp);
+  document.querySelectorAll(".count-up").forEach(animateCountUp);
 };
 
 document.querySelector(".count-up-button").addEventListener('click', () => {

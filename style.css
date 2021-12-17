@@ -1,0 +1,37 @@
+:root {
+  --accent-color: blueviolet;
+  --bg-color: aliceblue;
+}
+body {
+  align-items: center;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+}
+body,
+a,
+button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.countup {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+button {
+  background-color: blueviolet;
+  border-radius: 2px;
+  border: 1px solid blueviolet;
+  color: aliceblue;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+button:hover {
+  background-color: aliceblue;
+  color: blueviolet;
+}
+button:active {
+  background-color: blueviolet;
+  color: aliceblue;
+}

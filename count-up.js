@@ -1,5 +1,6 @@
-const animateCountUp = (el) => { // el must be an element containing only an integer
-  
+const animateCountUp = (el) => {
+  // el must be an element containing only an integer
+
   const animationDuration = 2; //in seconds
   const frameRate = 24; //Hz,frames per second AKA number of times number is updated per second
 
@@ -20,15 +21,21 @@ const animateCountUp = (el) => { // el must be an element containing only an int
     counter++;
 
     if (counter > endCounter) {
+      document
+        .querySelector(".count-up-button")
+        .addEventListener("click", runAnimations);
       clearInterval(animationInterval);
     }
   }, 1000 / frameRate);
 };
 
 const runAnimations = () => {
+  document
+    .querySelector(".count-up-button")
+    .removeEventListener("click", runAnimations);
   document.querySelectorAll(".count-up").forEach(animateCountUp);
 };
 
-document.querySelector(".count-up-button").addEventListener('click', () => {
-    runAnimations();
-})
+document
+  .querySelector(".count-up-button")
+  .addEventListener("click", runAnimations);

@@ -1,13 +1,18 @@
 :root {
-  --accent-color: blueviolet; 
-  --bg-color: aliceblue; 
+  --accent-color: blueviolet;
+  --bg-color: aliceblue;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
   align-items: center;
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
 }
 body,
